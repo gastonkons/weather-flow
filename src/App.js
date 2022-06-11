@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { Route, Routes } from 'react-router-dom'
+import './App.css'
+import Dashboard from './pages/Dashboard/Dashboard'
+// const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-31.4250374&lon=-64.1475419&units=metric&appid=c916542639e8ec942af661fd76dcf593'
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Routes>
+        <Route path='/' element={<Dashboard />} />
+        <Route path='*' element={<Dashboard />} />
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
