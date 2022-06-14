@@ -30,7 +30,7 @@ c916542639e8ec942af661fd76dcf593
 
 Debemos ingresarla en el archivo ubicado en 
 ```
-./src/.env
+./.env
 ```
 De la siguiente forma
 ```
